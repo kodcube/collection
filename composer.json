@@ -1,0 +1,34 @@
+{
+    "name": "kodcube/collection",
+    "type": "library",
+    "keywords": ["PHP","Collections"],
+    "description": "Collections Library & Interface",
+    "licence":"MIT",
+    "authors": [
+        {
+            "name": "Steven Miles",
+            "email": "steve@kodcube.com",
+            "homepage": "https://www.kodcube.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php":">=7.0.0",
+    },
+    "require-dev": {
+        "phpunit/phpunit": "6.*"
+    },
+    "autoload": {
+        "psr-4": {
+             "KodCube\\Collection\\":"./KodCube/Collection"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "KodCube\\Collection\\Test\\":"./KodCube/Collection/test"
+        }
+    },
+    "scripts": {
+        "test-collection": "vendor/bin/phpunit -c vendor/kodcube/collection/phpunit.xml --colors=always"
+    }
+}
